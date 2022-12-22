@@ -1,37 +1,55 @@
 import './style.css';
+import createGame from './modules/createGame.js';
+import getDataFromAPI from './modules/getDataFromAPI.js';
+import savePlayerData from './modules/savePlayerData.js';
+import showScores from './modules/showScores.js';
 
-const ul = document.querySelector('.display-scores');
-
-const data = [
-  {
-    name: 'Name',
-    score: 92,
-  },
-  {
-    name: 'Name',
-    score: 100,
-  },
-  {
-    name: 'Name',
-    score: 48,
-  },
-  {
-    name: 'Name',
-    score: 77,
-  },
-];
-
-const listItem = (userData) => {
-  const { name, score } = userData;
-  return `<li class="score">${name}: ${score}</li>`;
+// We create a new game
+const getGameId = async () => {
+  const response = await createGame();
+  return response.json();
 };
 
-const showScores = (data) => {
-  ul.innerHTML = '';
-  data.forEach((item) => {
-    const list = listItem(item);
-    ul.innerHTML += list;
-  });
+// Game id: KbOFwjqbOHiK6n1fW0cJ
+getGameId();
+
+window.onload = async () => {
+  const data = await getDataFromAPI();
+  showScores(data.result);
 };
 
-window.onload = showScores(data);
+const refreshBtn = document.getElementById('refresh-btn');
+refreshBtn.addEventListener('click', async () => {
+  const data = await getDataFromAPI();
+  showScores(data.result);
+});
+
+let playerData = {
+  user: '',
+  score: '',
+};
+
+const playerName = document.querySelector('.name');
+playerName.addEventListener('input', (e) => {
+  const playerName = e.target.value.trim();
+  playerData = {
+    ...playerData,
+    user: playerName,
+  };
+});
+
+const playerScore = document.querySelector('.score');
+playerScore.addEventListener('input', (e) => {
+  const playerScore = e.target.value.trim();
+  playerData = {
+    ...playerData,
+    score: playerScore,
+  };
+});
+
+const form = document.getElementById('form');
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+  savePlayerData(playerData);
+  form.reset();
+});
