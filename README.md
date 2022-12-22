@@ -41,7 +41,7 @@ After you're finished please remove all the comments and instructions!
 - [📖 About the Project](#about-project)
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
-    - [Key Features](#key-features)
+    <!-- - [Key Features](#key-features) -->
   - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
@@ -51,22 +51,27 @@ After you're finished please remove all the comments and instructions!
   - [Run tests](#run-tests)
   - [Deployment](#triangular_flag_on_post-deployment)
 - [👥 Authors](#authors)
-- [🔭 Future Features](#future-features)
+<!-- - [🔭 Future Features](#future-features) -->
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
 - [🙏 Acknowledgements](#acknowledgements)
-- [❓ FAQ (OPTIONAL)](#faq)
+<!-- - [❓ FAQ (OPTIONAL)](#faq) -->
 - [📝 License](#license)
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [your_project_name] <a name="about-project"></a>
+# 📖 [Leaderboard] <a name="about-project"></a>
 
-> Describe your project in 1 or 2 sentences.
+> 
 
-**[your_project__name]** is a...
+**[leaderboard]** is a web application that allows two applications to talk to each other. APIs are an accessible way to extract and share data within and across organizations.
 
-## 🛠 Built With <a name="built-with"></a>
+## 🛠 Built With <a name="built-with">
+- HTML
+- CSS
+- JavaScript
+- Webpack
+</a>
 
 ### Tech Stack <a name="tech-stack"></a>
 
@@ -94,7 +99,7 @@ After you're finished please remove all the comments and instructions!
 </details>
 
 <!-- Features -->
-
+<!-- 
 ### Key Features <a name="key-features"></a>
 
 > Describe between 1-3 key features of the application.
@@ -103,7 +108,7 @@ After you're finished please remove all the comments and instructions!
 - **[key_feature_2]**
 - **[key_feature_3]**
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">back to top</a>)</p> -->
 
 <!-- LIVE DEMO -->
 
@@ -126,6 +131,9 @@ To get a local copy up and running, follow these steps.
 ### Prerequisites
 
 In order to run this project you need:
+- Visual Studio Code or amy other equivalent code editor
+- Knowledge in HTML, CSS, Javascript and Github
+- And internet connection.
 
 <!--
 Example command:
@@ -138,7 +146,7 @@ Example command:
 ### Setup
 
 Clone this repository to your desired folder:
-
+git clone 'repo url'
 <!--
 Example commands:
 
@@ -151,7 +159,8 @@ Example commands:
 ### Install
 
 Install this project with:
-
+- Git Bash
+- GitHub Desktop
 <!--
 Example command:
 
@@ -164,7 +173,8 @@ Example command:
 ### Usage
 
 To run the project, execute the following command:
-
+- npm run build
+- npm run start
 <!--
 Example command:
 
@@ -188,7 +198,7 @@ Example command:
 ### Deployment
 
 You can deploy this project using:
-
+- GitHub Pages
 <!--
 Example:
 
@@ -207,20 +217,14 @@ Example:
 
 👤 **Author1**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@lugard1](https://github.com/lugard1)
+- Twitter: [@Dsn3kings](https://twitter.com/Dsn3kings)
+- LinkedIn: [Lugard Agu](https://linkedin.com/in/linkedinhandle)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
-
+<!-- 
 ## 🔭 Future Features <a name="future-features"></a>
 
 > Describe 1 - 3 features you will add to the project.
@@ -229,7 +233,7 @@ Example:
 - [ ] **[new_feature_2]**
 - [ ] **[new_feature_3]**
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">back to top</a>)</p> -->
 
 <!-- CONTRIBUTING -->
 
@@ -245,9 +249,8 @@ Feel free to check the [issues page](../../issues/).
 
 ## ⭐️ Show your support <a name="support"></a>
 
-> Write a message to encourage readers to support your project
+> If you like this project give us a star ⭐️
 
-If you like this project...
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -255,14 +258,14 @@ If you like this project...
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-> Give credit to everyone who inspired your codebase.
+<!-- > Give credit to everyone who inspired your codebase. -->
 
-I would like to thank...
+I would like to thank everyone that made this work a success.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FAQ (optional) -->
-
+<!-- 
 ## ❓ FAQ (OPTIONAL) <a name="faq"></a>
 
 > Add at least 2 questions new developers would ask when they decide to use your project.
@@ -275,7 +278,7 @@ I would like to thank...
 
   - [Answer_2]
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">back to top</a>)</p> -->
 
 <!-- LICENSE -->
 

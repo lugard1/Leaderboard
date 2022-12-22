@@ -6,8 +6,27 @@
   <title>Leaderboard</title>
 </head>
 <body>
-  <main>
+  <main class="main-container">
     <h1>Leaderboard</h1>
+    <section class="container">
+      <section class="display-section">
+        <div class="refresh-header">
+          <h4 class="displayHeader">Refresh Scores</h4>
+          <button id="refresh-btn">Refresh</button>
+        </div>
+        <ul class="display-scores">
+         
+        </ul>
+      </section>
+      <section class="add-section">
+        <h4 class="addHeader">Add your score</h4>
+        <form action="" id="form">
+          <input type="text" id="input" placeholder="Your name"><br>
+          <input type="number" id="input"  placeholder="Your score"><br>
+          <button type="submit" id="submit-btn">submit</button>
+        </form>
+      </section>
+    </section>
   </main> 
 </body>
 </html>
