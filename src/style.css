@@ -49,6 +49,13 @@ h1 {
 #refresh-btn {
   margin-bottom: 10px;
   font-size: 12px;
+  margin-right: 5px;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.907);
+}
+
+#refresh-btn:hover {
+  background-color: rgba(102, 0, 255, 0.601);
+  color: #fff;
 }
 
 #form {
@@ -60,8 +67,14 @@ h1 {
   font-size: 10px;
   width: 50px;
   padding: 5px;
-  margin: 3px 0 3px auto;
+  margin: 3px 5px 3px auto;
   float: right;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.907);
+}
+
+#submit-btn:hover {
+  background-color: rgba(102, 0, 255, 0.601);
+  color: #fff;
 }
 
 #input {
